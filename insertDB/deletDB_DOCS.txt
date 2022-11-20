@@ -1,0 +1,11 @@
+set FOREIGN_KEY_CHECKS = 0;
+truncate sdpid;
+truncate service;
+truncate service_gateway;
+truncate sdpid_service;
+truncate user;
+truncate `group`;
+truncate user_group;
+truncate group_service;
+truncate closed_connection;
+set FOREIGN_KEY_CHECKS = 1;

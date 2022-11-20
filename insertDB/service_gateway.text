@@ -1,0 +1,20 @@
+//service_gateway
+/*
++---------------+--------------+------+-----+---------+----------------+
+| Field         | Type         | Null | Key | Default | Extra          |
++---------------+--------------+------+-----+---------+----------------+
+| id            | int          | NO   | PRI | NULL    | auto_increment |
+| service_id    | int          | NO   | MUL | NULL    |                |
+| gateway_sdpid | int          | NO   | MUL | NULL    |                |
+| protocol      | tinytext     | NO   |     | NULL    |                |
+| port          | int unsigned | NO   |     | NULL    |                |
+| nat_ip        | varchar(128) | NO   |     |         |                |
+| nat_port      | int unsigned | NO   |     | 0       |                |
++---------------+--------------+------+-----+---------+----------------+
+*/
+
+var service_gate_controller =
+"insert into service_gateway values(1,1,2001,'tcp',18000,'10.100.100.100',18000)";
+
+var service_gate_light =
+"insert into service_gateway values(2,1,20002,'tcp',8000,'10.0.1.1',8000)";

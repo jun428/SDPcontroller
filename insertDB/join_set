@@ -1,0 +1,18 @@
+select * from sdpid_service LEFT JOIN service_gateway ON sdpid_service.service_id=service_gateway.service_id LEFT JOIN gateway ON gateway.sdpid=service_gateway.gateway_sdpid ;
+
+sdpid_service.service_id, gateway.name,gateway.address
+sdpid_service.sdpid, service_gateway.service_id,service_gateway.gateway_sdpid
+
+select sdpid_service.sdpid,sdpid_service.service_id, gateway.name,gateway.address from sdpid_service LEFT JOIN service_gateway ON sdpid_service.service_id=service_gateway.service_id LEFT JOIN gateway ON gateway.sdpid=service_gateway.gateway_sdpid ;
+
+select sdpid_service.sdpid,sdpid_service.service_id, gateway.name,gateway.address from sdpid_service LEFT JOIN service_gateway ON sdpid_service.service_id=service_gateway.service_id LEFT JOIN gateway ON gateway.sdpid=service_gateway.gateway_sdpid where sdpid_service.sdpid=1110100;
+
+
+select sdpid_service.sdpid,sdpid_service.service_id, gateway.name,gateway.address,sdpid.encrypt_key,sdpid.hmac_key from sdpid_service LEFT JOIN service_gateway ON sdpid_service.service_id=service_gateway.service_id LEFT JOIN gateway ON gateway.sdpid=service_gateway.gateway_sdpid LEFT JOIN sdpid on sdpid.sdpid = service_gateway.gateway_sdpid;
+
+//spd query
+
+select sdpid_service.sdpid,sdpid_service.service_id, gateway.name,gateway.address,sdpid.encrypt_key,sdpid.hmac_key from sdpid_service LEFT JOIN service_gateway ON sdpid_service.service_id=service_gateway.service_id LEFT JOIN gateway ON gateway.sdpid=service_gateway.gateway_sdpid LEFT JOIN sdpid on sdpid.sdpid = service_gateway.gateway_sdpid where sdpid=1110100;
+
+
+select sdpid_service.sdpid,sdpid_service.service_id, gateway.name,gateway.address,sdpid.encrypt_key,sdpid.hmac_key from sdpid_service LEFT JOIN service_gateway ON sdpid_service.service_id=service_gateway.service_id LEFT JOIN gateway ON gateway.sdpid=service_gateway.gateway_sdpid LEFT JOIN sdpid on sdpid.sdpid = service_gateway.gateway_sdpid where sdpid_service.sdpid=1110100;

@@ -1,0 +1,28 @@
+//sdpid table
+/*
+
++------------------+---------------------------------------+------+-----+---------------------+----------------+
+| Field            | Type                                  | Null | Key | Default             | Extra          |
++------------------+---------------------------------------+------+-----+---------------------+----------------+
+| sdpid            | int                                   | NO   | PRI | NULL                | auto_increment |
+| valid            | tinyint(1)                            | NO   |     | 1                   |                |
+| type             | enum('client','gateway','controller') | NO   |     | client              |                |
+| country          | varchar(128)                          | NO   |     | NULL                |                |
+| state            | varchar(128)                          | NO   |     | NULL                |                |
+| locality         | varchar(128)                          | NO   |     | NULL                |                |
+| org              | varchar(128)                          | NO   |     | NULL                |                |
+| org_unit         | varchar(128)                          | YES  |     | NULL                |                |
+| alt_name         | varchar(128)                          | YES  |     | NULL                |                |
+| email            | varchar(128)                          | YES  |     | NULL                |                |
+| encrypt_key      | varchar(2048)                         | YES  |     | NULL                |                |
+| hmac_key         | varchar(2048)                         | YES  |     | NULL                |                |
+| serial           | varchar(32)                           | NO   |     | NULL                |                |
+| last_cred_update | timestamp                             | NO   |     | 0000-00-00 00:00:00 |                |
+| cred_update_due  | timestamp                             | NO   |     | 0000-00-00 00:00:00 |                |
+| user_id          | int                                   | YES  | MUL | NULL                |                |
+| environment_id   | int                                   | YES  | MUL | NULL                |                |
++------------------+---------------------------------------+------+-----+---------------------+----------------+
+
+example
+"insert into sdpid(sdpid,valid,type,country,state,locality,org,serial,last_cred_update,cred_update_due) values (3001,1,'gateway','KR',' ',' ','CNU','Gateway',NOW(),NOW())";
+*/

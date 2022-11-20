@@ -1,0 +1,18 @@
+//sdpid_service table
+/*
++------------+------+------+-----+---------+----------------+
+| Field      | Type | Null | Key | Default | Extra          |
++------------+------+------+-----+---------+----------------+
+| id         | int  | NO   | PRI | NULL    | auto_increment |
+| sdpid      | int  | NO   | MUL | NULL    |                |
+| service_id | int  | NO   | MUL | NULL    |                |
++------------+------+------+-----+---------+----------------+
+
+*/
+
+var sdpid_service_2001_1 =
+"insert into sdpid_service values(1,2001,1)"
+
+
+var sdpid_service_2001_1 =
+"insert into sdpid_service values(1,20001,1)"

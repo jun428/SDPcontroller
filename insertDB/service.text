@@ -1,0 +1,15 @@
+//service table
+/*
++-------------+---------------+------+-----+---------+----------------+
+| Field       | Type          | Null | Key | Default | Extra          |
++-------------+---------------+------+-----+---------+----------------+
+| id          | int           | NO   | PRI | NULL    | auto_increment |
+| name        | varchar(1024) | NO   |     | NULL    |                |
+| description | varchar(4096) | NO   |     | NULL    |                |
++-------------+---------------+------+-----+---------+----------------+
+example
+insert into service(id, name, description) values (int, var, var)
+*/
+
+var service_controller =
+  "insert into service(id, name, description) values (1, 'controller', 'It is controller service')";
